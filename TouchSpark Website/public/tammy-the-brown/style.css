@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'MetalMania';
+    src: url(m_fonts/MetalMania-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'MB-ForeverRaw';
+    src: url(m_fonts/MB-ForeverRaw.ttf);
+    
+}
+
+body {
+    background-color: black;
+    background-image: url(m_imgs/stars.jpg); 
+    background-size: 230%;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#touchspark-logo {
+    max-width: 33%;
+    max-height: 100px;
+}
+
+nav img {
+    max-width: 100%;
+    max-height: 100px;
+}
+
+nav div {
+    text-align: right;
+    font-family: 'MB-ForeverRaw';
+    font-size: 34px;
+    color: #eee;
+}
+
+#content {
+    padding: 0 20px 0 20px;
+}
+
+.button {
+    margin-top: 30px;
+    padding-left: 10px;
+    height: 100px;
+    background-color: #ddd;
+    font-family: 'MetalMania';
+    font-size: 40px;
+    text-align: center;
+    align-content: center;
+    transition: background-color 0.03s;
+}
+
+.button:hover {
+    background-color: #bbb;
+}

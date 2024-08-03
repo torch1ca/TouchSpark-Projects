@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>TouchSpark x Tammy the Brown</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <nav>
+        <a id='touchspark-logo' href='https://www.instagram.com/touchsparkstudio/?__d=1%3Futm_source%3Dig_embed'>
+            <img src='m_imgs/TouchSpark _Logo_Inverted.png' alt='TouchSpark Studio'>
+        </a>
+        <a href='https://www.instagram.com/tammythebrown/'>
+            <div>
+                Tammy the Brown
+            </div>
+        </a>
+    </nav>
+    <div id='content'>
+        <div class='button' onclick='buttonPress(0)'>
+            Flash Once
+        </div>
+        <div class='button' onclick='buttonPress(1)'>
+            Flash Twice
+        </div>
+        <div class='button' onclick='buttonPress(2)'>
+            Flash Three Times
+        </div>
+    </div>
+
+    <script>
+        let clickSfx = new Audio('m_audio/click3.wav');
+        clickSfx.volume = 0.35;
+        let ws = new WebSocket('ws://'+window.location.hostname+':81/');
+
+        function buttonPress(buf) {
+            clickSfx.play();
+            console.log(buf);
+            ws.send(buf);
+        }
+    </script>
+
+</body>
+</html>
