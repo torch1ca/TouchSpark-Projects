@@ -1,0 +1,294 @@
+:root {
+    --darkgrey: #333333;
+    --lightergrey: #ebebeb;
+    --blue: #2574cf;
+}
+
+/*///MAJOR DOM DIVS///*/
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+footer {
+    background-color: black;
+    color: grey;
+    padding: 15px 0 15px 15%;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #a0a0a0;
+}
+
+/*///GLOBAL CLASSES///*/
+h1 {
+    font-family: integral;
+    font-style: oblique;
+    letter-spacing: 0.08rem;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 0.92rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.01rem;
+}
+
+.button-aligner {
+    display: flex;
+    justify-content: left;
+}
+
+.button {
+    padding: 0.7vw 1.8vw 1.1vw 1.8vw;
+    border-radius: 2rem;
+    background-color: var(--blue);
+
+    text-align: center;
+    font-size: 1.4vw;
+    letter-spacing: 0.1vw;
+    font-family: integral;
+    font-style: oblique;
+    color: #fff;
+}
+
+/*///WELCOME PAGE///*/
+#welcome {
+    background-color: #eee;
+    background-image: url("imgs/Hero-banner-1-scaled.jpg");
+    background-position: 70% 50%;
+    background-size: auto 100%;
+    width: 108%;
+}
+
+#welcome-blur-panel {
+    background-color: #dcdcdc30;
+    box-shadow: 0 0 28px 50px #dcdcdc30;
+    backdrop-filter: blur(2px);
+}
+
+#welcome-content {
+    padding-left: 4.5%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 34%;
+}
+
+#logo {
+    width: 50%;
+}
+
+#welcome-panel {
+    width: 100%;
+}
+
+#welcome-blur-panel .button {
+    margin-top: 1.8vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--blue);
+    font-size: 1.8vw;
+    letter-spacing: 0.16vw;
+    color: #fff;
+}
+
+/*///START SECTION///*/
+#start-flex {
+    display: flex;
+    justify-content: center;
+    background-color: var(--lightergrey);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#start-flex-spacer {
+    width: 40px;
+}
+
+.start-panel {
+    max-width: 450px;
+    padding: 20px;
+    padding-top: 0px;
+    color: var(--darkgrey);
+}
+
+.start-panel.color-inverse {
+    background-color: var(--darkgrey);
+    color: var(--lightergrey);
+}
+
+.start-panel .button {
+    background-color: var(--darkgrey);
+    color: var(--lightergrey);
+}
+
+.start-panel.color-inverse .button {
+    background-color: var(--lightergrey);
+    color: var(--darkgrey);
+}
+
+/*///COLLECTIONS///*/
+.collection-banner {
+    background-image: url("imgs/Room.jpg");
+    background-size: 100% 100%;
+}
+
+.collection-banner-content {
+    display: flex;
+    justify-content: center;
+    padding: 45px 5px 45px 5px;
+    background-color: #ffffff40;
+    backdrop-filter: blur(1.5px);
+}
+
+.collection-banner-content img {
+    width: 40%;
+    height:min-content;
+    margin-right: 50px;
+}
+
+.collection-banner-content p {
+    width: 33%;
+    color: #2574a0;
+    line-height: normal;
+    font-size: 1.05vw;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/*///NEW TACTICAL PRODUCTS CONTENT///*/
+.new-tactical {
+    .product-panel.tactical-demon {
+        background-image: url("imgs/Demon-banner-mobile-1-scaled.jpg");
+    }
+    
+    .product-panel.tactical-ducky {
+        background-image: url("imgs/Ducky-homepage-banner.jpg");
+    }
+    
+    .product-panel.tactical-gaming {
+        background-image: url("imgs/Gameboy-homepage-banner-2.jpg");
+    }
+
+    .product-panel {
+        background-size: 100% 100%;
+        height: 60vw;
+        width: 33.33%;
+    }
+
+    .product-panel-content {
+        padding-top: 20px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .product-panel-content img {
+        width: 100%;
+    }
+
+    .button {
+        font-size: 1vw;
+        letter-spacing: 0.01vw;
+        padding: 0.5vw 1.0vw 0.8vw 1.0vw; 
+    }
+
+    .button.tactical-demon { background-color: #eb3f8f; }
+    .button.tactical-ducky { background-color: #0f24e2; }
+    .button.tactical-gaming { background-color: #4ccac4; }
+    p.tactical-demon { color: #eb3f8f; backdrop-filter: blur(2px); }
+    p.tactical-ducky { color: #0f24e2; backdrop-filter: blur(2px); }
+    p.tactical-gaming { color: #4ccac4; backdrop-filter: blur(2px); }
+
+    .product-panel-content p {
+        font-size: 1.3vw;
+        line-height: 1.6vw;
+    }
+
+    .product-photo {
+        width: 90%;
+        margin-top: 1.9vw;
+        margin-left: 2vw;
+    }
+}
+
+/*///THE ORIGINALS PRODUCTS///*/
+.the-originals {
+    .product-panel {
+        background-image: url("imgs/Room.jpg");
+        background-size: 100% 100%;
+        width: 33%;
+    }
+
+    .product-header {
+        width: 86%;
+        padding: 7% 7% 0% 7%;
+    }
+
+    .product-photo {
+        width: 76%;
+        padding: 6% 12% 0% 12%;
+    }
+
+    .button-aligner {
+        justify-content: center;
+        align-items: center;
+        margin: 4% auto 7% auto;
+    }
+    
+    .button {
+        font-size: 1.2vw;
+        letter-spacing: 0.02vw;
+        padding: 0.5vw 1.0vw 0.8vw 1.0vw; 
+    }
+}
+
+
+/*///CLUBROOM///*/
+#clubroom {
+    background-image: url("imgs/Restaurant-Footer-1.jpg");
+    background-size: 100% 100%;
+    height: 40vw;
+}
+
+#clubroom-content {
+    
+    padding: 4% 25% 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#clubroom-text {
+    width: 40%;
+    background-color: #ffffff80;
+    /*box-shadow: 0 0 28px 50px #dcdcdc30;*/
+    backdrop-filter: blur(2px);
+    padding: 0% 2% 0% 2%;
+    line-height: normal;
+}
+
+#clubroom-text h1 {
+    font-weight: bold;
+    font-size: 2.6vw;
+    color: var(--darkgrey);
+}
+
+#clubroom-text p {
+    font-size: 1.8vw;
+    color: var(--darkgrey);
+}
+
+#beverage-links {
+    display: flex;
+    justify-content: right;
+    width: 30%;
+}
+
+.beverage-link {
+    width: 100%;
+}

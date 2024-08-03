@@ -1,0 +1,36 @@
+@font-face {
+    font-family: integral;
+    src: url(fonts/Integral/Fontspring-DEMO-integralcf-regular.otf);
+}
+
+@font-face {
+    font-family: integral;
+    src: url(fonts/Integral/Fontspring-DEMO-integralcf-regularoblique.otf);
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: integral;
+    src: url(fonts/Integral/Fontspring-DEMO-integralcf-bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: integral;
+    src: url(fonts/Integral/Fontspring-DEMO-integralcf-boldoblique.otf);
+    font-style: oblique;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: integral;
+    src: url(fonts/Integral/Fontspring-DEMO-integralcf-extrabold.otf);
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: integral;
+    src: url(fonts/Integral/Fontspring-DEMO-integralcf-extraboldoblique.otf);
+    font-style: oblique;
+    font-weight: bolder;
+}

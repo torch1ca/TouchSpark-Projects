@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'MetalMania';
-    src: url(m_fonts/MetalMania-Regular.ttf);
+    src: url(fonts/MetalMania-Regular.ttf);
 }
 
 @font-face {
     font-family: 'MB-ForeverRaw';
-    src: url(m_fonts/MB-ForeverRaw.ttf);
+    src: url(fonts/MB-ForeverRaw.ttf);
     
 }
 
 body {
     background-color: black;
-    background-image: url(m_imgs/stars.jpg); 
+    background-image: url(imgs/stars.jpg); 
     background-size: 230%;
     margin: 0;
     padding: 20px;
