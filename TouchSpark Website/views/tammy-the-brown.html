@@ -20,27 +20,17 @@
     </nav>
     <div id='content'>
         <div class='button' onclick='buttonPress(0)'>
-            Flash Once
+            Applause
         </div>
         <div class='button' onclick='buttonPress(1)'>
-            Flash Twice
+            Some Strobe (Paid)
         </div>
         <div class='button' onclick='buttonPress(2)'>
-            Flash Three Times
+            Lots of Strobe (Paid)
         </div>
     </div>
 
-    <script>
-        let clickSfx = new Audio('tammy-the-brown/audio/click3.wav');
-        clickSfx.volume = 0.35;
-        let ws = new WebSocket('ws://'+window.location.hostname+':81/');
-
-        function buttonPress(buf) {
-            clickSfx.play();
-            console.log(buf);
-            ws.send(buf);
-        }
-    </script>
+    <script src="tammy-the-brown/script.js"></script>
 
 </body>
 </html>

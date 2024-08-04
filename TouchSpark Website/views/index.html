@@ -145,6 +145,21 @@
     </footer>
 
     <!--Scripts-->
+    
+    <!-- 
+    DEBUGGING WEB SOCKET ESP
+    <script>
+        let ws = new WebSocket('ws://'+window.location.hostname+':81/');
 
+        ws.onopen = (evt) => {
+            let json = '{"userInfo":"esp32"}';
+            ws.send(json);
+        };
+
+        ws.onmessage = (evt) => {
+            let data = JSON.parse(evt.data);
+            console.log(data.buttonPressed);
+        };
+    </script> -->
 </body>
 </html>
